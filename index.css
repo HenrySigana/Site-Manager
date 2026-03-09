@@ -1,1 +1,63 @@
 
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background-color: #1e1e2f;
+  color: #fff;
+  position: fixed;
+  padding: 20px;
+}
+.sidebar h2 { margin-bottom: 20px; }
+.sidebar ul { list-style: none; }
+.sidebar li { margin-bottom: 15px; }
+.sidebar a { color: #fff; text-decoration: none; }
+.sidebar a:hover { color: #4fc3f7; }
+
+/* Main content */
+.main {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+/* Cards */
+.card {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+table th {
+  background-color: #4fc3f7;
+  color: #fff;
+}
+
+/* Buttons */
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button.primary { background-color: #4fc3f7; color: #fff; }
+button.danger { background-color: #f44336; color: #fff; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar { width: 100%; height: auto; position: relative; }
+  .main { margin-left: 0; }
+}
